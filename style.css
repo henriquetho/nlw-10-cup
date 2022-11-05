@@ -39,7 +39,8 @@ body {
   background-color: #121214;
   background-image: var(--bg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position-y: top;
+  background-position-x: center;
   background-size: cover;
 }
 #app {
@@ -53,6 +54,10 @@ header {
   text-align: center;
 }
 
+header .logo {
+  width: 120px;
+}
+
 #cards {
   display: flex;
   flex-direction: column;
@@ -62,6 +67,9 @@ header {
 .card {
   padding: 3.2rem 2.3rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
@@ -125,11 +133,16 @@ header {
   transition: transform 0.3s;
 }
 
+figcaption {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
 .card {
   opacity: 0;
   animation: appear 0.7s forwards;
 }
-
 
 @keyframes appear {
   0% {
@@ -146,5 +159,9 @@ header {
     max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
+    height: fit-content;
+  }
+  body {
+    background-position: top center;
   }
 }
