@@ -116,7 +116,7 @@ header {
 }
 
 footer p, footer p a {
-    color: #338AF3;
+    color: #d4e5fa;
     font-size: 1.4rem;
     text-transform: uppercase;
     text-align: center;
@@ -125,7 +125,7 @@ footer p, footer p a {
 
 footer p a {
     text-decoration: none;
-    color: #d4e5fa;
+    color: #338AF3;
 }
 
 .card h2:hover,
